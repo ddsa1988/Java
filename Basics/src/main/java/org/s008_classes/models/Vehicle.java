@@ -1,4 +1,4 @@
-package org.s008_Classes.models;
+package org.s008_classes.models;
 
 import java.security.InvalidParameterException;
 

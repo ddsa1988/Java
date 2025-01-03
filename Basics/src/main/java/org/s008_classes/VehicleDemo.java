@@ -1,6 +1,6 @@
-package org.s008_Classes;
+package org.s008_classes;
 
-import org.s008_Classes.models.Vehicle;
+import org.s008_classes.models.Vehicle;
 
 public class VehicleDemo {
     public static void userMain() {
