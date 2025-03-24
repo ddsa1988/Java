@@ -1,4 +1,4 @@
-package firstApp;
+package examples;
 
 import java.util.Scanner;
 

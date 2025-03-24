@@ -26,7 +26,8 @@ public class Exercise001 {
 
                 float weightOnMoon = GetWeightOnMoon(weightOnEarth);
 
-                String result = String.format("%.2f gallons is %.2f liters.", weightOnEarth, weightOnMoon);
+                String result = String.format("The weight of %.2f on Earth is %.2f on Moon.", weightOnEarth,
+                        weightOnMoon);
 
                 System.out.println(result);
 
@@ -36,6 +37,8 @@ public class Exercise001 {
                 System.out.println("Value must be a number.");
             }
         }
+
+        reader.close();
     }
 
     private static float GetWeightOnMoon(float value) {
