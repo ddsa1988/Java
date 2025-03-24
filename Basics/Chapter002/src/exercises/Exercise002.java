@@ -14,9 +14,9 @@ public class Exercise002 {
             actualLine++;
 
             float meters = inchToMeter(i);
-            String result = String.format("Inches: %d - Meters: %.2f", i, meters);
+            String msg = String.format("Inches: %d - Meters: %.2f", i, meters);
 
-            System.out.println(result);
+            System.out.println(msg);
 
             if (actualLine < maxLines)
                 continue;

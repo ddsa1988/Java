@@ -26,10 +26,10 @@ public class Exercise001 {
 
                 float weightOnMoon = GetWeightOnMoon(weightOnEarth);
 
-                String result = String.format("The weight of %.2f on Earth is %.2f on Moon.", weightOnEarth,
+                String msg = String.format("The weight of %.2f on Earth is %.2f on Moon.", weightOnEarth,
                         weightOnMoon);
 
-                System.out.println(result);
+                System.out.println(msg);
 
                 break;
 

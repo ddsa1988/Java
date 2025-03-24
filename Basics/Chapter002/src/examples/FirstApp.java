@@ -26,9 +26,9 @@ public class FirstApp {
 
                 float liter = gallonToLiters(gallon);
 
-                String result = String.format("%.2f gallons is %.2f liters.", gallon, liter);
+                String msg = String.format("%.2f gallons is %.2f liters.", gallon, liter);
 
-                System.out.println(result);
+                System.out.println(msg);
 
                 break;
             } catch (Exception e) {
