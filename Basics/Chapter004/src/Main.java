@@ -1,7 +1,7 @@
-import examples.booleanLogicalOperators.*;
+import examples.bitwiseOperators.*;
 
 public class Main {
     public static void main(String[] args) {
-        ShortCircuitAnd.userMain();
+        ShiftRight.userMain();
     }
 }
