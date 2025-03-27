@@ -1,8 +1,8 @@
-package examples;
+package examples.selectionStatements;
 
 import java.util.Scanner;
 
-public class StatementIfElse {
+public class IfElseDemo {
     public static void userMain() {
         final int number = 10;
         Scanner reader = new Scanner(System.in);
