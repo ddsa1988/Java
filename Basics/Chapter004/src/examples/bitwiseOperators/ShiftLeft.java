@@ -19,7 +19,8 @@ public class ShiftLeft {
 
             for (int i = 0; i < 4; i++) {
                 num <<= 1;
-                System.out.println(num);
+                String msg = String.format("%d => binary %s.", num, Integer.toBinaryString(num));
+                System.out.println(msg);
             }
         }
     }
