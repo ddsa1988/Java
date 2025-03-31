@@ -8,6 +8,10 @@ public class Exercise005 {
     }
 
     private static long GetFactorial(long number) {
+        if (number <= 0) {
+            throw new IllegalArgumentException("Parameter must be greater than zero.");
+        }
+
         long result = 1;
 
         for (long i = 0; i <= number; i++) {
@@ -20,6 +24,10 @@ public class Exercise005 {
     }
 
     private static void PrintFactorial(long number) {
+        if (number <= 0) {
+            throw new IllegalArgumentException("Parameter must be greater than zero.");
+        }
+
         long result = 1;
 
         for (long i = 0; i <= number; i++) {
