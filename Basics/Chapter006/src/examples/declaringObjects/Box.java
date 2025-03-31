@@ -1,4 +1,4 @@
-package examples;
+package examples.declaringObjects;
 
 public class Box {
     public double width;
