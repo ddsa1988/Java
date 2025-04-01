@@ -1,19 +1,34 @@
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 import exercises.*;
 
 public class Main {
     public static void main(String[] args) {
-        LocalDate date1 = LocalDate.now();
-        LocalDateTime date2 = LocalDateTime.now();
+        var acc1 = new Account("Diego", "Ag. 3253", 125, 1000, LocalDate.now());
+        var acc2 = new Account("Diego", "Ag. 3253", 125, 2000, LocalDate.now());
 
-        LocalDate date3 = LocalDate.of(1988, 1, 22);
-        LocalDate date4 = LocalDate.parse("1993-10-16");
+        System.out.println(acc1);
+        System.out.println(acc2);
 
-        System.out.println(date1);
-        System.out.println(date2);
-        System.out.println(date3);
-        System.out.println(date4);
+        System.out.println();
+
+        System.out.println("acc1.equals(acc2) => " + acc1.equals(acc2));
+        System.out.println("acc1 == acc2 => " + (acc1 == acc2));
+        System.out.println();
+
+        acc1.deposit(2800);
+        System.out.println(acc1);
+
+        try {
+            acc1.withdraw(2000);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        System.out.println(acc1);
+        System.out.println();
+
+        System.out.println("Income acc1: " + acc1.getIncome());
+        System.out.println("Income acc2: " + acc2.getIncome());
     }
 }
