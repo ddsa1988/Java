@@ -1,7 +1,7 @@
-import examples.objectsAsParameters.*;
+import examples.accessControl.*;
 
 public class Main {
     public static void main(String[] args) {
-        BoxDemo.userMain();
+        TestDemo.userMain();
     }
 }
