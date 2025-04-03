@@ -21,6 +21,10 @@ public class StackString2 {
             throw new Exception("Stack is full.");
         }
 
+        if (value == null || value.isEmpty() || value.isBlank()) {
+            throw new IllegalArgumentException("Argument must not be null or empty.");
+        }
+
         stack[counter++] = value;
     }
 

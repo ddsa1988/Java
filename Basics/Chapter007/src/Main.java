@@ -1,7 +1,7 @@
-import examples.varargs.*;
+import examples.practice.*;
 
 public class Main {
     public static void main(String[] args) {
-        TestDemo4.userMain();
+        TestQueueString.userMain();
     }
 }

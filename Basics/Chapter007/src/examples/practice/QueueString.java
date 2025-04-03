@@ -1,18 +1,18 @@
 package examples.practice;
 
-public class StackString1 {
+public class QueueString {
     private final static int defaultCapacity = 5;
-    private String[] stack;
+    private String[] queue;
     private int capacity;
     private int counter;
 
-    public StackString1() {
+    public QueueString() {
         this(defaultCapacity);
     }
 
-    public StackString1(int capacity) {
+    public QueueString(int capacity) {
         setCapacity(capacity);
-        stack = new String[this.capacity];
+        queue = new String[this.capacity];
         counter = 0;
     }
 
@@ -25,7 +25,7 @@ public class StackString1 {
             throw new IllegalArgumentException("Argument must not be null or empty.");
         }
 
-        stack[counter++] = value;
+        queue[counter++] = value;
         return true;
     }
 
@@ -34,8 +34,14 @@ public class StackString1 {
             return null;
         }
 
-        String value = stack[--counter];
-        stack[counter] = null;
+        String value = queue[0];
+        int size = counter - 1;
+
+        for (int i = 0; i < size; i++) {
+            queue[i] = queue[i + 1];
+        }
+
+        queue[--counter] = null;
 
         return value;
     }
@@ -52,16 +58,16 @@ public class StackString1 {
         return size() == capacity;
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
+
     private void setCapacity(int capacity) {
         if (capacity <= 0) {
             throw new IllegalArgumentException("Capacity must be greater than zero.");
         }
 
         this.capacity = capacity;
-    }
-
-    public int getCapacity() {
-        return capacity;
     }
 
     @Override
@@ -74,10 +80,10 @@ public class StackString1 {
         int size = size();
 
         for (int i = 0; i < size - 1; i++) {
-            sb.append(stack[i] + ", ");
+            sb.append(queue[i] + ", ");
         }
 
-        sb.append(stack[size - 1] + " ]");
+        sb.append(queue[size - 1] + " ]");
 
         return sb.toString();
     }
