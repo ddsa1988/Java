@@ -1,7 +1,7 @@
-import examples.staticKeyword.*;
+import examples.varargs.*;
 
 public class Main {
     public static void main(String[] args) {
-        StaticDemo4.userMain();
+        OldStyleDemo.userMain();
     }
 }
