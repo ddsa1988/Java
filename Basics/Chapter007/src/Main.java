@@ -1,7 +1,7 @@
-import examples.practice.*;
+import exercises.*;
 
 public class Main {
     public static void main(String[] args) {
-        TestQueueString.userMain();
+        Exercise004.userMain();
     }
 }
