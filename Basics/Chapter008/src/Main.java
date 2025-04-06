@@ -1,7 +1,7 @@
-import basics.SimpleInheritance;
+import usingSuper.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        SimpleInheritance.userMain();
+        TestDemo.userMain();
     }
 }
