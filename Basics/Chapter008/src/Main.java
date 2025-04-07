@@ -1,7 +1,7 @@
-import classHierarchy.*;
+import dynamicMethodDispatch.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        TestDemo.userMain();
+        TestDemo1.userMain();
     }
 }
