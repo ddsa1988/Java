@@ -1,7 +1,7 @@
-import typeInference.*;
+import practice.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        TestDemo.userMain();
+        TestDemo1.userMain();
     }
 }
