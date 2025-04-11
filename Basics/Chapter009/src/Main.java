@@ -1,7 +1,7 @@
-import examples.practice.*;
+import examples.defaultMethods.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        TestDemo.userMain();
+        DefaultMethods.userMain();
     }
 }
