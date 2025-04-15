@@ -1,7 +1,7 @@
-import examples.usingTryCatch.*;;
+import examples.finallyKeyword.*;;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Example001.userMain();
     }
 }
