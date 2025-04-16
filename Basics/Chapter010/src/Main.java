@@ -1,4 +1,4 @@
-import examples.finallyKeyword.*;;
+import examples.chainedExceptions.*;;
 
 public class Main {
     public static void main(String[] args) {
