@@ -1,4 +1,4 @@
-import createThread.implementRunnable.*;
+import createMultipleThreads.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {

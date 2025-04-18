@@ -1,9 +1,9 @@
 package createThread.implementRunnable;
 
 public class NewThread implements Runnable {
-    Thread thread;
+    public final Thread thread;
 
-    // Create a nre thread
+    // Create a new thread
     public NewThread() {
         thread = new Thread(this, "Demo Thread");
         System.out.println("Child thread: " + thread);
