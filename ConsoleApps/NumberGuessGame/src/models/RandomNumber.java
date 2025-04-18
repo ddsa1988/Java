@@ -18,6 +18,7 @@ public class RandomNumber {
             end = start - end;
             start = start - end;
         }
+
         return random.nextInt(start, end + 1);
     }
 }
