@@ -1,8 +1,8 @@
-package createMultipleThreads;
+package waitThreadFinish;
 
 public class NewThread implements Runnable {
     private String name;
-    private final Thread thread;
+    public final Thread thread;
 
     public NewThread(String name) {
         setName(name);
@@ -20,10 +20,6 @@ public class NewThread implements Runnable {
 
     public String getName() {
         return name;
-    }
-
-    public void startThread() {
-        thread.start();
     }
 
     @Override
